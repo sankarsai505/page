@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regestation</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            background-color: darkslategray;
+        }
+        form {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.21);
+            width: 30%;
+            height: 40%;
+        }
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            color: darksalmon;
+            justify-content: center;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover{
+
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body id="body">
+    <form id="form">
+    <h1 style="text-align: center; color:red;">Registration Page</h1>
+        <table>
+            <tr>
+                <th><label id="label">first Name</label></th>
+                <td><input type="text" placeholder="enter first name" required></td>
+            </tr>
+            <br>
+            <tr>
+                <th><label id="label">second name</label></th>
+                <td><input type="text" placeholder="enter second name" required></td>
+                
+            </tr>
+            <br>
+            <th>Gender</th>
+                <td>
+                    <div>
+                    <label id="label"><input type="radio" name="gender" value="male"> Male</label>
+                    <label id="label"><input type="radio" name="gender" value="female"> Female</label>
+                    <label id="label"><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </td>
+            <tr>
+                <th><label id="label">email id</label></th>
+                <td><input type="email" placeholder="enter your email" required></td>
+            </tr>
+            <br>
+            <tr>
+                <th><label id="label">phone number</label></th>
+                <td><input type="tel" placeholder="enter phone number" required></td>
+            </tr>
+            <br>
+            <tr>
+                <th><label id="label">date of brith</label></th>
+                <td><input type="date" placeholder="enter your date of brith" required></td>
+            </tr>
+            <br>
+            <tr>
+                <br>
+                <th><label id="label">select your subject</label></th>
+                <td>
+                    <select id="subject">
+                        <option> full satck java </option>
+                        <option> fullt stack web technologyes </option>
+                        <option> AWS </option>
+                        <option> DEVOPS</option>
+                        <option> testing</option>
+                    </select>
+                </td>
+            </tr>
+            <br><br>
+            <br><br><br>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" id="button">Register</button>
+                </td>
+            </tr>
+           </table>
+    </form>
+    
+    
+</body>
+</html>
